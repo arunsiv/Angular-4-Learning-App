@@ -1,0 +1,14 @@
+<!-- <input type="text" class="form-control" (input)="onUserTyping($event)">
+<hr> -->
+<input type="text" class="form-control" [(ngModel)]="userTypedMessage">
+<hr>
+<!-- <p>{{ userTypedMessage }}</p>
+<hr> -->
+<button class="btn btn-primary" [disabled]="!enableButton" (click)="onButtonClick()">
+    {{ btnText }}
+</button>
+<hr>
+<!-- <p [innerText]="messageOnClick"></p> -->
+<p>{{ messageOnClick }}</p>
+<hr>
+<app-server></app-server>
